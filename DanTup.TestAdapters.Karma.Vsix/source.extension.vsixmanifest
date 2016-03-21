@@ -1,27 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-	<Metadata>
-		<Identity Id="908a18f2-e3a1-4300-982e-bb46baa7b181" Version="1.10" Language="en-US" Publisher="Danny Tuppeny" />
-		<DisplayName>VS Adapter for Google's Karma Test Runner</DisplayName>
-		<Description xml:space="preserve">Test Adapter to integration test results from Google's Karma Test Runner into Visual Studio.</Description>
-		<MoreInfo>https://github.com/DanTup/TestAdapters/blob/master/README.karma.md</MoreInfo>
-		<License>LICENCE.txt</License>
-		<GettingStartedGuide>https://github.com/DanTup/TestAdapters/blob/master/README.karma.md</GettingStartedGuide>
-		<ReleaseNotes>https://github.com/DanTup/TestAdapters/releases</ReleaseNotes>
-		<Icon>Resources\Package.ico</Icon>
-		<PreviewImage>Screenshot.png</PreviewImage>
-		<Tags>test, framework, adapter, karma, karmajs, google, angular, testacular, jasmine</Tags>
-	</Metadata>
-	<Installation InstalledByMsi="false">
-		<InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
-	</Installation>
-	<Dependencies>
-		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-	</Dependencies>
-	<Assets>
-		<Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="DanTup.TestAdapters.Xml" Path="|DanTup.TestAdapters.Xml|" />
-		<Asset Type="UnitTestExtension" d:Source="Project" d:ProjectName="DanTup.TestAdapters.Xml" Path="|DanTup.TestAdapters.Xml|" />
-		<Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="DanTup.TestAdapters" Path="|DanTup.TestAdapters|" AssemblyName="|DanTup.TestAdapters;AssemblyName|" />
-		<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-	</Assets>
+  <Metadata>
+    <Identity Id="908a18f2-e3a1-4300-982e-bb46baa7b181" Version="1.10" Language="en-US" Publisher="Danny Tuppeny" />
+    <DisplayName>VS Adapter for Google's Karma Test Runner</DisplayName>
+    <Description xml:space="preserve">Test Adapter to integration test results from Google's Karma Test Runner into Visual Studio.</Description>
+    <MoreInfo>https://github.com/DanTup/TestAdapters/blob/master/README.karma.md</MoreInfo>
+    <License>LICENCE.txt</License>
+    <GettingStartedGuide>https://github.com/DanTup/TestAdapters/blob/master/README.karma.md</GettingStartedGuide>
+    <ReleaseNotes>https://github.com/DanTup/TestAdapters/releases</ReleaseNotes>
+    <Icon>Resources\Package.ico</Icon>
+    <PreviewImage>Screenshot.png</PreviewImage>
+    <Tags>test, framework, adapter, karma, karmajs, google, angular, testacular, jasmine</Tags>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="DanTup.TestAdapters.Xml" Path="|DanTup.TestAdapters.Xml|" />
+    <Asset Type="UnitTestExtension" d:Source="Project" d:ProjectName="DanTup.TestAdapters.Xml" Path="|DanTup.TestAdapters.Xml|" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="DanTup.TestAdapters" Path="|DanTup.TestAdapters|" AssemblyName="|DanTup.TestAdapters;AssemblyName|" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
 </PackageManifest>
